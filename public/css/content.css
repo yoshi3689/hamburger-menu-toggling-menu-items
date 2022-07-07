@@ -1,0 +1,118 @@
+.content__title {
+  padding: 3rem 0;
+  text-align: center;
+  color: #fff;
+}
+
+.content__cards {
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 3rem;
+}
+
+
+.content__card {
+  font-family: var(--f-accent1);
+  /* display: block; */
+  position: relative;
+  /* padding: 15rem 0 0; */
+  width: 100%;
+  text-align: center;
+  border-radius: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.1527) 0px 0px 10px 10px;
+  overflow: hidden;
+  padding: 3rem 2rem 2rem;
+  padding-top: 0;
+  color: #fff;
+  background: linear-gradient(
+    /* starting with transparent */
+    hsl(0 0% 0% / 0), 
+    /* 30% from the top, it starts to have a fade. that's why the fourth index, opacity is set to a quite small decimal value */
+    hsl(20 0% 0% / 0.3) 20%,
+    hsl(20 0% 0% / 0.3) 80%,
+    hsl(0 0% 0% / 0)
+  );
+}
+
+.content__card * {
+  color: #fff;
+}
+
+.content__card__img {
+  /* 
+  width: 100%;
+  max-width: 100%;
+  max-height: 100%; */
+  
+  /* the below lines of rules let 
+  the image span across the entire card */
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  top: 0;
+  left: 0;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1) 300ms;
+}
+
+.content__card__title {
+  margin-top: 0.5rem;
+  font-size: 2.2rem;
+}
+
+.content__card__btn {
+  font-size: 1.4rem;
+  font-size: 1.7rem;
+  border-radius: .3em;
+  padding: 0.25em .75em;
+  
+  border: 2px solid #fff;
+}
+
+.content__card__body {
+  /* text-align: left; */
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1) 300ms;
+  transform: translateY(200%);
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+
+
+.content__card:hover > .content__card__body {
+  transform: translateY(-10px);
+
+}
+
+.content__card:focus-within > .content__card__body {
+  transform: translateY(-10px);
+}
+
+.content__card:hover > .content__card__img {
+  transform: scale(1.03);
+}
+
+
+@media screen and (min-width: 900px) {
+  .content__card__title {
+    margin-top: 0.5rem;
+    font-size: 1.8rem;
+  }
+  
+  .content__card__btn {
+    font-size: 1.4rem;
+    font-size: 1.5rem;
+    border-radius: .3em;
+    padding: 0.25em .75em;
+    
+    border: 2px solid #fff;
+  }
+  
+  .content__card__body {
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 300ms;
+    transform: translateY(200%);
+    margin-bottom: 1rem;
+    font-size: 1.14rem;
+  }
+}

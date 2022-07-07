@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Assignment 5</title>
+  <!-- for the server -->
+  <link rel="stylesheet" href="../../public/css/content.css" />
+  <link rel="stylesheet" href="../../public/css/hero.css" />
+  <link rel="stylesheet" href="../../public/css/index.css" />
+  <link rel="stylesheet" href="../../public/css/nav.css" />
+  <link rel="stylesheet" href="../../public/css/hero.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+</head>
+
+<body>
+  <header id="hero">
+    <nav id="nav">
+      <div class="nav__container">
+        <input type="checkbox" class="nav__toggle" id="nav__toggle" />
+        <label class="nav__toggle-label" for="nav__toggle"><span></span></label>
+        <a href="#" class="nav__logo">
+          <h3 class="nav__logo__text">Yoshi's Kitchen</h3>
+        </a>
+        <ul class="nav__items">
+          <li class="nav__item"><a href="#" class="nav__item__link">Contact </a></li>
+          <li class="nav__item"><a href="#" class="nav__item__link">About </a></li>
+          <li class="nav__item"><a href="#" class="nav__item__link">Menu </a></li>
+          <li class="nav__item"><a href="#" class="nav__item__link">Sign Up</a></li>
+          <li class="nav__item" id="logOut">
+            <form action="/logout" method="get">
+              <input type="submit" value="log out" />
+            </form>
+          </li>
+        </ul>
+        <div class="nav__btns">
+          <a href="#" class="nav__btn"><i class="fab fa-facebook-square"></i></a>
+          <a href="#" class="nav__btn"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="nav__btn"><i class="fab fa-twitter-square"></i></a>
+        </div>
+      </div>
+      <!-- </div> -->
+    </nav>
+
+    <div class="hero__wrapper">
+      <div class="hero__container">
+        <div class="hero__headings">
+          <h1 class="hero__heading--main text-shadow">Welcome Back <span id="userName"></span></h1>
+          
+        </div>
+        <div class="hero__search__wrapper">
+          <input type="text" placeholder="    looking for something??" class="hero__search-bar" />
+          <button type="submit" class="hero__search-btn"><i class="fa fa-search"></i></button>
+        </div>
+        <div class="hero__cards">
+          <div class="hero__card">
+            <i class="fas fa-car"></i>
+            <h4 class="hero__card__title">Delivery ✓</h4>
+            <p class="hero__card__detail">
+              Free Delivery for orders over 30$!
+            </p>
+            <span class="hero__card__detail--emphasis"> Order <i class="fas fa-caret-down"></i></span>
+          </div>
+
+          <div class="hero__card">
+            <i class="fas fa-store-alt"></i>
+            <h4 class="hero__card__title">Takeout ✓</h4>
+            <p class="hero__card__detail">
+              Lots of takeout menus with big discounts
+            </p>
+            <span class="hero__card__detail--emphasis"> Check <i class="fas fa-caret-down"></i></span>
+          </div>
+
+          <div class="hero__card">
+            <i class="fas fa-seedling"></i>
+            <h4 class="hero__card__title">No-meat options ✓</h4>
+            <p class="hero__card__detail">
+              Lots of Vegetarian & Vegan dishes available
+
+            </p>
+            <span class="hero__card__detail--emphasis"> Details <i class="fas fa-caret-down"></i></span>
+          </div>
+
+          <div class="hero__card">
+            <i class="fas fa-users"></i>
+            <h4 class="hero__card__title">Families & Parties ✓</h4>
+            <p class="hero__card__detail">
+              lots of options for children.
+            </p>
+            <span class="hero__card__detail--emphasis"> Book <i class="fas fa-caret-down"></i></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+
+
+
+  <main id="content">
+    <section class="container">
+      <h2 class="content__title">Your favorite dishes</h2>
+      <div class="content__cards split" id="cards">
+
+      </div>
+    </section>
+  </main>
+</body>
+
+</html>

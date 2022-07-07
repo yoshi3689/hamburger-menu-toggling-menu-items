@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind&family=Roboto&display=swap');
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --neutral-200: #ddd;
+  --white: #fff;
+  --f-main: sans-serif;
+  --f-accent1: 'Hind', sans-serif;
+  --f-accent2: 'Roboto', sans-serif;
+}
+
+html {
+  font-size: 16px;
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  background-color: rgb(240, 198, 31);
+  margin-bottom: 5rem;
+  color: var(--neutral-200);
+  font-family: var(--f-main);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.text-shadow {
+  text-shadow: 0px 0px 5px rgba(46, 45, 45, 0.886), 0 0 0.5em rgba(31, 40, 109, 0.393);
+}
+
+.container {
+  width: 95%;
+  margin: 0 auto;
+}
+
+.split {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--gap-size, 2em);
+}
+
+.split > * {
+  flex-basis: var(--max-width, 30%);
+  min-width: var(--min-width, 20em);
+  flex-grow: 1;
+}
+
+.btn {
+  text-shadow: none;
+  line-height: 1;
+  display: inline-block;
+  cursor: pointer;
+
+  transform: scale(1);
+  transition: transform 200ms ease-in-out;
+
+  background-color: transparent;
+}

@@ -1,0 +1,80 @@
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  color: black;
+  background-image: linear-gradient(
+    rgba(0, 0, 0, 0.1527),
+    rgba(0, 0, 0, 0.15)),
+    url('../images/dinner_bg.jpg');
+  background-position: center;
+  background-size: cover;
+  filter: grayscale(20%);
+
+}
+
+#form-wrapper {
+  min-width: 420px;
+  width: 50%;
+  height: 75%;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  background-color: rgb(255, 204, 0);
+  border-radius: 1rem;
+  padding: 0 2rem;
+}
+
+#form-header {
+  text-align: center;
+}
+
+#login {
+  align-self: start;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+
+.login-form-field::placeholder {
+  color: #3a3a3a;
+}
+
+input { 
+  border: none;
+  border-bottom: 1px solid #3a3a3a;
+  border-radius: .2rem;
+  outline: none;
+  margin-bottom: 1rem;
+  background-color: rgb(255, 204, 0);
+  width: 100%;
+  padding: .5rem 0;
+  padding-left: .5rem;
+  font-size: 1rem;
+}
+
+input:not(input[type="submit"]):focus {
+  box-shadow: 0 0 10px 2px rgb(19, 118, 223, .7);
+}
+
+#loginBtn {
+  border-radius: .5rem;
+  margin-top: 1.5rem;
+  color: white;
+  background-color: rgb(19, 60, 223);
+  cursor: pointer;
+  transition: ease-in-out 150ms;
+}
+
+#loginBtn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 2px 3px 1px rgba(43, 40, 40, 0.591);
+}

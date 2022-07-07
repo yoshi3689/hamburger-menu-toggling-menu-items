@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Assignment 5 login</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- for the server -->
+  <link rel="stylesheet" href="/css/login.css" />
+  <link rel="stylesheet" href="/css/content.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"> 
+  <link rel="stylesheet" href="/css/index.css" />
+  </head>
+  <body class="login-body">
+    <main id="form-wrapper">
+      <h1 id="form-header">Hello! Welcome!</h1>
+      <form id="login">
+        <input id="email" type="email" required="required" placeholder="Email" value="ynagai1@bcit.ca"/>
+        <input id="password" type="password" required="required" placeholder="Password" value="yoshi1998"/>
+        <input id="favWord" type="text" required="required" placeholder="Favorite Word" value="reciprocal"/>
+        <input type="submit" value="Login" id="loginBtn"/>
+        <div id="login-error-msg-holder">
+          <p id="login-error-msg"><span id="error-msg-second-line"></span></p>
+        </div>
+      </form>
+    </main>
+
+    <script src="js/client.js"></script>
+</body>
+</html>
